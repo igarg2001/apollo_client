@@ -32,7 +32,7 @@ type Query {
   }
 
 type Mutation {
-   bookTrips (launchIDs : [ID]!) : TripUpdateResponse!
+   bookTrips (launchIds : [ID]!) : TripUpdateResponse!
    cancelTrip (launchID : ID!) : TripUpdateResponse!
    login (email : String) : String #login token
 }

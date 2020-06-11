@@ -32,6 +32,7 @@ class UserAPI extends DataSource {
   }
 
   async bookTrips({ launchIds }) {
+    //console.log(this.context)
     const userId = this.context.user.id;
     if (!userId) return;
 
